@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿#include <iostream>// подключение библиотеки ввода вывода
+#include <fstream>
 #include <string>
 #include <windows.h>
 
