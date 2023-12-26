@@ -12,12 +12,12 @@ void saveAnswers(const char* filename, const bool answers[], int size) {
         for (int i = 0; i < size; ++i) {
             packedAnswers |= (answers[i] << i);
         }
-        file.write(reinterpret_cast<char*>(&packedAnswers), sizeof(packedAnswers));
+        file.write(reinterpret_cast<char*>(&packedAnswers), sizeof(packedAnswers)); 
         file.close();
         cout << "Ответы сохранены в файле " << filename << endl;
     }
     else {
-        cout << "Не удалось открыть файл для записи" << endl;
+        cout << "Не удалось открыть файл для записи" << endl; // вывод сообщения об ошибке
     }
 }
 
